@@ -21,9 +21,9 @@ public class CreateDemo {
         try {
 
             //stwórz obiekty i powiąż je ze sobą
-            Driver driver = new Driver("Mariusz", "Nowak");
+            Driver driver = new Driver("Szymon", "Smuda");
 
-            DriverDetail driverDetail = new DriverDetail("A", "456789132");
+            DriverDetail driverDetail = new DriverDetail("A", "496709132");
 
             driver.setDriverDetail(driverDetail);
 
@@ -36,6 +36,7 @@ public class CreateDemo {
 
             //zakomituj transakcję
             session.getTransaction().commit();
+            session.close();
 
         } finally {
             //posprzątaj po otwartej sesji
