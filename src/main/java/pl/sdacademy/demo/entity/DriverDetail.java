@@ -8,7 +8,12 @@ public class DriverDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     Long id;
+
+    /**
+     * T-tram, B-bus, A-all
+     */
     @Column(name = "transport_type")
     String transportType;
 
